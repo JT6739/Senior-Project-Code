@@ -1,4 +1,4 @@
-// you can just copy and paste this part into main with out download the actual main.c file
+// you can just copy and paste this part into main with out downloading the actual main.c file
 #include "main.h"
 #include "ssd1306.h"
 #include "ssd1306_fonts.h"

@@ -18,4 +18,23 @@ You will also have enable float printing so we can display the float decimal val
   In the Other flags box, add: -u _printf_float
   Click Apply and Close
   Clean the project, then Build and Flash again
-  
+
+Some notes on connections
+For display and voltage and current sensors they share the same SDA and SCL lines
+  SDA -> PB9
+  SCL -> PB8
+
+For screen:
+  VCC -> 5V
+  GND -> GND
+
+For sensor:
+  VCC -> 3.3V
+  GND -> GND
+  Make sure GND is shared with load GND
+  sensor has to be in series with what were trying to measure so:
+    Vsource -> in+ (sensor) -> in- (sensor) -> load -> GND
+
+# updates
+Newest main.c includes reading the current and voltage from sensor and displaying the values will also have some codes in case current or voltage wont display so we can trouble shoot 
+

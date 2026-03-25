@@ -36,5 +36,7 @@ For sensor:
     Vsource -> in+ (sensor) -> in- (sensor) -> load -> GND
 
 # updates
+
+3/24/26
 Newest main.c includes reading the current and voltage from sensor and displaying the values will also have some codes in case current or voltage wont display so we can trouble shoot 
 

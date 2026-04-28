@@ -20,23 +20,42 @@ You will also have enable float printing so we can display the float decimal val
   Clean the project, then Build and Flash again
 
 Some notes on connections
-For display and voltage and current sensors they share the same SDA and SCL lines
+For display and voltage and current sensors they share the same SDA and SCL lines (I2CA)
   SDA -> PB9
   SCL -> PB8
 
-For screen:
+For display B that displays RPM on SDA and SCL lines (I2CB)
+  SDA -> PA10
+  SCL -> PA9
+
+For screens:
   VCC -> 5V
   GND -> GND
 
-For sensor:
+For Voltage/Current sensor:
   VCC -> 3.3V
   GND -> GND
   Make sure GND is shared with load GND
   sensor has to be in series with what were trying to measure so:
     Vsource -> in+ (sensor) -> in- (sensor) -> load -> GND
+    
+For HAL effect sesnor
+  VCC -> 5V or 3.3V
+  GND -> GND
+  S -> PB1
+
+Extra pins:
+A0: Sends 3.3V signal for Relay
 
 # updates
 
 3/24/26
 Newest main.c includes reading the current and voltage from sensor and displaying the values will also have some codes in case current or voltage wont display so we can trouble shoot 
+
+4/28/26
+Added second I2C line which will be I2CB
+Added 2nd Screen which will be on I2CB that reads the RPM measurement
+Added pin for HAL effect sensor which reads magnet
+Added calculations for RPM
+Added GPIO output for A0 to send 3.3V signal for relay
 

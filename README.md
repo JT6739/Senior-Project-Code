@@ -50,12 +50,12 @@ A0: Sends 3.3V signal for Relay
 # updates
 
 3/24/26
-Newest main.c includes reading the current and voltage from sensor and displaying the values will also have some codes in case current or voltage wont display so we can trouble shoot 
+  Newest main.c includes reading the current and voltage from sensor and displaying the values will also have some codes in case current or voltage wont display so we can trouble shoot 
 
 4/28/26
-Added second I2C line which will be I2CB
-Added 2nd Screen which will be on I2CB that reads the RPM measurement
-Added pin for HAL effect sensor which reads magnet
-Added calculations for RPM
-Added GPIO output for A0 to send 3.3V signal for relay
+  Added second I2C line which will be I2CB
+  Added 2nd Screen which will be on I2CB that reads the RPM measurement
+  Added pin for HAL effect sensor which reads magnet
+  Added calculations for RPM
+  Added GPIO output for A0 to send 3.3V signal for relay
 

@@ -1,6 +1,9 @@
 # Senior-Project-Code
 Code for Senior project Spring 2026
 
+Project description:
+Converts 3 phase AC energy from a 3 phase generator into a single usable DC energy that can charge batteries. Project measures voltage and current through INA219 voltage sensor which gives data to our NUCLEO-F303ZE MCU and displays values to our LED Screens. Project also uses A3144 Hal effect sensor to measure the RPM of our generator and display that information. This was done using embedeed C on our STM32 MCU using the STM32 IDE. 
+
 Some things to do know before you put files in STM32 IDE
 make sure you enable pin PB9 to I2C SDA and PB8 to I2C SCL
 you need to make sure it enables I2C before you generate the code 
